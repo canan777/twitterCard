@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  
+    />
+  </head>
+  <body>
+    <!--En dış kapsayıcı kart-->
+    <div class="wrapper">
+      <!--Tweet grişi yapılan,gizilik ayrı barındarran üst kısım-->
+      <div class="input-box">
+        <div class="tweet-area">
+          <span class="placeholder">Neler Oluyor ?</span>
+          <div
+            class="input editable"
+            contenteditable="true"
+            spellcheck="false"
+          ></div>
+          <div class="input readonly"></div>
+        </div>
+        <div class="privacy">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Herkes Cevaplayabilir</span>
+        </div>
+      </div>
+      <!--Tweet grişi yapılan,gizilik ayrı barındarran üst kısım-->
+
+      <!--Tweet butonu ve Ikonları barındaran alt kısım-->
+      <div class="bottom">
+        <ul class="icons">
+            <li><i class="fa-solid fa-file-image"></i></li>
+            <li><i class="fa-solid fa-location-dot"></i></li>
+            <li><i class="fa-regular fa-face-smile"></i></li>
+            <li><i class="fa-regular fa-user"></i></li>
+
+        </ul>
+
+        <div class="content">
+            <span class="counter" id="counter">5</span>
+            <button class="button ">Tweet</button>
+        </div>
+      </div>
+      <!--Tweet butonu ve Ikonları barındaran alt kısım-->
+    </div>
+    <!--En dış kapsayıcı kart-->
+
+    <script src="./main.js"></script>
+  </body>
+</html>

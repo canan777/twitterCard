@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  body {
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 35px 25px;
+  }
+  
+  .tweet-area {
+    position: relative;
+    min-height: 120px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .tweet-area::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .placeholder {
+    position: absolute;
+    color: #333;
+    font-size: 15px;
+    pointer-events: none;
+    margin-top: 1px;
+  }
+  .input {
+    outline: none;
+    min-height: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .editable {
+    position: relative;
+    z-index: 5;
+  }
+  
+  .readonly{
+  background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+  
+  .privacy {
+    color: #1da1f2;
+    display: inline-flex;
+    border-radius: 40px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 15px 0;
+  }
+  
+  .privacy:hover,
+  .icons li:hover {
+    background-color: #e7f5fe;
+  }
+  
+  .input-box {
+    border-bottom: 1px solid #98a5b1;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 35px;
+    align-items: center;
+  }
+  
+  .icons {
+    display: inline-flex;
+    gap: 15px;
+  }
+  
+  .icons li {
+    color: #1da1f2;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .counter {
+    color: #333;
+    font-size: 30px;
+    border-right: 1px solid #98a5b1;
+    padding-right: 15px;
+    display: none;
+  }
+  
+  .button {
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #0d8bd9;
+  }
+  
+  .button.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .overTweet {
+    background-color: #FF6666;
+  }
